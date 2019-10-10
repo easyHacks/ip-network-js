@@ -1,0 +1,13 @@
+.idea
+*.ts
+!*.d.ts
+*.log
+*.json
+.*ignore
+.editorconfig
+.gitattributes
+*.test.d.ts
+webpack.config.d.ts
+*.tgz
+.github
+coverage

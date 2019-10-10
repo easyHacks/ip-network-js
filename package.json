@@ -1,0 +1,40 @@
+{
+    "name": "@easyhacks/ip-network",
+    "version": "1.0.0",
+    "main": "index.js",
+    "types": "index.d.ts",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/easyHacks/ipnetwork-js.git"
+    },
+    "scripts": {
+        "build": "webpack",
+        "lint": "tslint --project .",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "@types/jest": "^24.0.18",
+        "@types/node": "^12.7.12",
+        "@types/webpack": "^4.39.3",
+        "jest": "^24.9.0",
+        "jest-sonar-reporter": "^2.0.0",
+        "typescript": "^3.6.4",
+        "ts-jest": "24.1.0",
+        "ts-loader": "^6.2.0",
+        "ts-node": "^8.4.1",
+        "tslint": "^5.20.0",
+        "webpack": "^4.41.0",
+        "webpack-cli": "^3.3.9"
+    },
+    "jest": {
+        "preset": "ts-jest",
+        "testEnvironment": "node",
+        "collectCoverage": true,
+        "testResultsProcessor": "jest-sonar-reporter"
+    },
+    "jestSonar": {
+        "reportPath": "coverage",
+        "reportFile": "test-reporter.xml"
+    }
+}

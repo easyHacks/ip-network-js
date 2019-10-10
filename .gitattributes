@@ -1,0 +1,12 @@
+*.md text
+*.ts text
+*.json text
+.editorconfig text
+.gitignore text
+.gitattributes text
+.prettierignore text
+yarn.lock text
+
+* text=lf
+
+* filter=spabs

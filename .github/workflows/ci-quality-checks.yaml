@@ -1,0 +1,27 @@
+name: Quality Checks
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  tests:
+    name: Quality Checks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+      - uses: actions/setup-node@master
+        with:
+          node-version: 10.x
+      - run: yarn install
+      - run: yarn test
+      - run: sed -i 's#path="/.*/__tests__/#path="/github/workspace/__tests__/#g' coverage/test-reporter.xml
+      - run: sed -i 's#^SF:/.*/src/#SF:/github/workspace/src/#g' coverage/lcov.info
+      - run: env
+      - uses: sonarsource/sonarcloud-github-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

@@ -1,0 +1,23 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:all"
+    ],
+    "jsRules": {},
+    "rules": {
+        "no-inferrable-types": false,
+        "newline-before-return": false,
+        "no-magic-numbers": false,
+        "no-bitwise": false,
+        "typedef": false,
+        "no-void-expression": [
+            true,
+            "ignore-arrow-function-shorthand"
+        ],
+        "no-implicit-dependencies": [
+            true,
+            "dev"
+        ]
+    },
+    "rulesDirectory": []
+}
