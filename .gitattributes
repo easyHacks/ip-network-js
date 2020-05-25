@@ -1,11 +1,15 @@
-*.md text
-*.ts text
 *.json text
+*.md text
+*.properties text
+*.ts text
 .editorconfig text
-.gitignore text
+.eslintrc
 .gitattributes text
+.gitignore text
+.npmignore text
 .prettierignore text
 yarn.lock text
+LICENSE text
 
 * text=lf
 

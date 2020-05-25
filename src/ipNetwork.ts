@@ -8,7 +8,7 @@ export abstract class IPNetwork {
      * @param data - The IP address to apply the CIDR prefix to, in binary format (as ArrayBuffer)
      * @param prefix - The CIDR prefix to apply
      */
-    protected static applyPrefix(data: DataView, prefix: number) {
+    protected static applyPrefix(data: DataView, prefix: number): void {
         switch (prefix) {
             case 0:
                 IPNetwork.setBytesToZero(data, 0);

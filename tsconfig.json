@@ -2,8 +2,8 @@
     "compilerOptions": {
         "declaration": true,
         "sourceMap": true,
-        "target": "esnext",
-        "module": "commonjs",
+        "target": "ESNext",
+        "module": "CommonJS",
         "strict": true,
         "esModuleInterop": true
     }

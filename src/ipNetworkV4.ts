@@ -26,7 +26,6 @@ export class IPNetworkV4 extends IPNetwork {
     /**
      * @inheritDoc
      */
-    // tslint:disable-next-line:completed-docs - there is a bug with completed-docs if @inheritDoc is used
     public toString(): string {
         return `${this.address.getUint8(0)}` +
             `.${this.address.getUint8(1)}` +

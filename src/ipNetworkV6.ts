@@ -51,7 +51,6 @@ export class IPNetworkV6 extends IPNetwork {
     /**
      * @inheritDoc
      */
-    // tslint:disable-next-line:completed-docs - there is a bug with completed-docs if @inheritDoc is used
     public toString(): string {
         const bytes = Array(8)
             .fill(0)
